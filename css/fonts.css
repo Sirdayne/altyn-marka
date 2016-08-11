@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/GOTHIC.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Pragmatica Bold";
+	src: url("../fonts/Pragmatica Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
