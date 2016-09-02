@@ -408,13 +408,7 @@
         width: 50%;
         left: 25%;
     }
-    .created-line-box-right{
-        float: left !important;
-    }
-    .created-line-box-left{
-        float: right !important;
-    }
-    
+   
     
     /* ~~~~~~~~~~~~~~~~~~~ EXPORT ~~~~~~~~~~~~~~~~~~~~~~ */
     .big-middle{
@@ -504,6 +498,15 @@
 }
 
 @media only screen and (max-width : 540px) {
+    .top-lang{
+        float: left;
+        height: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .select-lang {
+        margin-top: 0;
+    }
     .top-contacts {
         padding: 0 0 0 50px;
     }
@@ -576,7 +579,7 @@
     }
     .main-header-slider h1{
         font-size: 18px;
-        margin-top:100px;
+        margin-top: 140px;
     }
     .product-header-bg .top-icon img {
         width:50px;
@@ -617,8 +620,8 @@
         display: none;
     }
     .menu-wrap.open-menu {
-        -webkit-transform: translate3d(0px,68px,0);
-        transform: translate3d(0px,68px,0);
+        -webkit-transform: translate3d(0px,100px,0);
+        transform: translate3d(0px,100px,0);
     }
     .meat-box,
     .halal-box,
