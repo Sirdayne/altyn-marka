@@ -804,6 +804,9 @@ nav.bottom-menu a {
     margin-top: 16px;
     font-size: 14px;
 }
+.selected-language, .language-menu{
+    cursor: pointer;
+}
 .select-lang-tick{
     position: relative;
 }
@@ -850,7 +853,6 @@ nav.bottom-menu a {
     width:140px;
     text-transform: uppercase;
     text-align: left;
-    cursor: pointer;
 }
 .about-us-header-bg	{
     background: #fff url("../img/about-us-header-bg.png") no-repeat center bottom;
@@ -1725,4 +1727,16 @@ nav.bottom-menu a {
 /* ~~~~~~~~~~~~~~~~~~ New Styles ~~~~~~~~~~~~~~~~~~*/
 .single-title-show{
     display: none;
+}
+.js-lang{
+    float: left;
+    text-transform: lowercase;
+}
+
+.js-en{
+    display: none;
+}
+
+body>div:last-child{
+    display:none;
 }

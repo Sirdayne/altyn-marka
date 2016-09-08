@@ -34,31 +34,49 @@
                     <div class="menu-wrap">
                         <nav class="mobile-menu">
                             <ul>
-                                <li><a href="about.html">о компании</a></li>
-                                <li><a href="product.html">продукт</a></li>
-                                <li><a href="standards.html">стандарты</a></li>
-                                <li><a href="exports.html">рынки</a></li>
-                                <li><a href="contacts.html" class="active">контакты</a></li>
+                                <li>
+                                    <a href="about.html" class="js-ru">о компании</a>
+                                    <a href="about.html" class="js-en">about us</a>
+                                </li>
+                                <li>
+                                    <a href="product.html" class="active js-ru">продукт</a>
+                                    <a href="product.html" class="active js-en">product</a>
+                                </li>
+                                <li>
+                                    <a href="standards.html" class="js-ru">стандарты</a>
+                                    <a href="standards.html" class="js-en">standards</a>
+                                </li>
+                                <li>
+                                    <a href="exports.html" class="js-ru">рынки</a>
+                                    <a href="exports.html" class="js-en">market</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html" class="js-ru">контакты</a>
+                                    <a href="contacts.html" class="js-en">contacts</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="top-line clearfix">
                         <div class="top-mobile-btn"><a href="#" class="burger"></a></div>
                         <div class="top-logo">
-                            <a href="index.html" class="logo">Алтын <br>Марка</a>
+                            <a href="index.html" class="logo js-ru">Алтын <br>Марка</a>
+                            <a href="index.html" class="logo js-en" style="display:inline-block;">Altyn <br>Marka</a>
                         </div>
                         <div class="top-contacts">
                             <adress>
-                                <span>ул. Керей Жанибек хандар, зд.5, оф 49</span>
-                                <a href="tel:+77172516520" class="top-phone">+7 (7172) 516 520</a>
+                                <span class="js-ru">ул. Керей Жанибек хандар, зд.5, оф 49</span>
+                                <span class="js-en">Zhanibek and kerey 5, office 49</span>
+                                <!--<span>ул. Кунаева, <span>д. 35/1, кв. 3,</span></span>-->
+                               <a href="tel:+77172516520" class="top-phone">+7 (7172) 516 520</a>
                             </adress>
                         </div>
                         <div class="top-lang">
                                 <div class="select-lang">
                                     <span class="select-lang-tick">
                                         <div class="select-lang-menu">
-                                             <div class="language-menu">Русский</div>
-                                             <div class="language-menu">English</div>
+                                             <div class="language-menu" id="js-ru">Русский</div>
+                                             <div class="language-menu" id="js-eng">English</div>
                                         </div>
                                         <div class="selected-language">Язык: русcкий</div>
                                     </span>
@@ -67,38 +85,72 @@
                     </div>
                     <nav class="top-menu desk-menu">
                         <ul>
-                            <li><a href="about.html">о компании</a></li>
-                            <li><a href="product.html">продукт</a></li>
-                            <li><a href="standards.html">стандарты</a></li>
-                            <li><a href="exports.html">рынки</a></li>
-                            <li><a href="contacts.html">контакты</a></li>
+                                <li>
+                                    <a href="about.html" class="js-ru">о компании</a>
+                                    <a href="about.html" class="js-en">about us</a>
+                                </li>
+                                <li>
+                                    <a href="product.html" class="active js-ru">продукт</a>
+                                    <a href="product.html" class="active js-en">product</a>
+                                </li>
+                                <li>
+                                    <a href="standards.html" class="js-ru">стандарты</a>
+                                    <a href="standards.html" class="js-en">standards</a>
+                                </li>
+                                <li>
+                                    <a href="exports.html" class="js-ru">рынки</a>
+                                    <a href="exports.html" class="js-en">market</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html" class="js-ru">контакты</a>
+                                    <a href="contacts.html" class="js-en">contacts</a>
+                                </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <section class="contacts">
-            <h3>Контакты</h3>
+            <h3 class="js-ru">Контакты</h3>
+            <h3 class="js-en">Contacts</h3>
+            
             <div class="form-content clearfix">
                 <div class="contacts-photo">
                     <div class="wrapper-content-adress">
-                        <div class="content-adress">
+                        <div class="content-adress js-ru">
                             <adress>010000 г. Астана <br>
                             ул. Керей Жанибек <br>хандар зд.5 оф 49<br><br>
                             Телефон. +7 7187 000000 <br>
                             Факс. +7 7187 111111 <br>
                             Email. altyn@marka.kz
                             </adress>
+                        </div>  
+                           
+                         <div class="content-adress js-en">  
+                            <adress>00001, Astana city<br>
+                            Zhanibek and Kerey 5, office 49<br>
+                            Tel. +7 7187 000000 <br>
+                            Fax. +7 7187 111111 <br>
+                            Email. altyn@marka.kz
+                            </adress>
                         </div>
                     </div>
                 </div>
                 <div class="contacts-form">
-                    <div class="form">
+                    <div class="form js-ru">
                         <input class="input lastname" type="text" value="" placeholder="Имя">
                         <input class="input lastname" type="text" value="" placeholder="Телефон">
                         <input class="input lastname" type="text" value="" placeholder="E-mail">
                         <textarea class="textarea"></textarea>
                         <button class="button white-button form-button">Отправить</button>
+                    </div>
+                    
+                    <div class="form js-en">
+                        <input class="input lastname" type="text" value="" placeholder="Name">
+                        <input class="input lastname" type="text" value="" placeholder="Phone">
+                        <input class="input lastname" type="text" value="" placeholder="E-mail">
+                        <textarea class="textarea"></textarea>
+                        <button class="button white-button form-button">Send</button>
                     </div>
                 </div>
             </div>
@@ -107,42 +159,98 @@
             <div class="footer-wrapper">
                 <div class="bottom-line clearfix">
                     <div class="footer-box name-box footer-box-hidden">
-                        <h4>Алтын марка</h4>
-                        <p>Один из ведущих производителей премиального мяса на внутреннем и международном рынках</p>
+                        <h4 class="js-ru">Алтын марка</h4>
+                        <h4 class="js-en">Altyn Marka</h4>
+                        
+                        <p class="js-ru">Один из ведущих производителей премиального мяса на внутреннем и международном рынках</p>
+                        <p class="js-en">One of the leading producer of premium meat in the domestic and international markets</p>
+                        
                     </div>
                     <div class="footer-box menu-box">
-                        <h4>Меню</h4>
+                        <h4 class="js-ru">Меню</h4>
+                        <h4 class="js-en">Menu</h4>
+                        
                         <nav class="bottom-menu desk-menu">
                             <ul>
-                                <li><a href="about.html">о компании</a></li>
-                                <li><a href="product.html">продукт</a></li>
-                                <li><a href="standards.html">стандарты</a></li>
-                                <li><a href="exports.html">рынки</a></li>
-                                <li><a href="contacts.html">контакты</a></li>
+                                <li>
+                                    <a href="about.html" class="js-ru">о компании</a>
+                                    <a href="about.html" class="js-en">about us</a>
+                                </li>
+                                <li>
+                                    <a href="product.html" class="active js-ru">продукт</a>
+                                    <a href="product.html" class="active js-en">product</a>
+                                </li>
+                                <li>
+                                    <a href="standards.html" class="js-ru">стандарты</a>
+                                    <a href="standards.html" class="js-en">standards</a>
+                                </li>
+                                <li>
+                                    <a href="exports.html" class="js-ru">рынки</a>
+                                    <a href="exports.html" class="js-en">market</a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html" class="js-ru">контакты</a>
+                                    <a href="contacts.html" class="js-en">contacts</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="footer-box cont-box">
-                        <h4>Контакты</h4>
-                        <address>
+                        <h4 class="js-ru">Контакты</h4>
+                        <h4 class="js-en">Contacts</h4>
+                        
+                        <address class="js-ru">
                             010000 г. Астана <br>
                             ул. Керей Жанибек <br>хандар зд.5 оф 49<br>
+                            <!--
+                            Западно-Казахстанская область <br>
+                            Акжаикский район <br>
+                            село Чапаево <br>
+                            -->
                             Телефон. +7 7187 000000 <br>
                             Факс. +7 7187 111111 <br>
                             Email. altyn@marka.kz
                         </address>
+                        
+                        <address class="js-en">
+                            00001, Astana city<br>
+                            Zhanibek and Kerey 5, office 49<br>
+                            Tel: +7 7187 000000 <br>
+                            Fax: +7 7187 111111 <br>
+                            Email: altyn@marka.kz
+                        </address>
                     </div>
-                    <div class="footer-box form-box footer-box-hidden">
+                    <div class="footer-box form-box footer-box-hidden js-ru">
                         <h4>Оставить заявку</h4>
                         <input type="text" placeholder="ИМЯ">
                         <input type="text" placeholder="E-MAIL ИЛИ ТЕЛЕФОН">
                         <input type="submit" value="ОТПРАВИТЬ">
                     </div>
+                    
+                    <div class="footer-box form-box footer-box-hidden js-en">
+                        <h4>Submit a request</h4>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="E-mail or Phone">
+                        <input type="submit" value="SUBMIT">
+                    </div>
 
                 </div>
                 
-                <div class="created-line clearfix">
-                    <div class="created-line-box-left">Разработано с особым трепетом <a href="http://ginnova.kz"><img src="img/gi-logo.png" alt="Разработано с особым трепетом. Global Innovationsmain"></a></div>
+               <div class="created-line clearfix">
+                    <div class="created-line-box-left js-ru">
+                        Разработано с особым трепетом 
+                        <a href="http://ginnova.kz">
+                            <img src="img/gi-logo.png" alt="Разработано с особым трепетом. Global Innovationsmain">
+                        </a>
+                    </div>
+                    
+                    <div class="created-line-box-left js-en">
+                        Created by 
+                        <a href="http://ginnova.kz">
+                            <img src="img/gi-logo.png" alt="Global Innovationsmain">
+                        </a>
+                    </div>
+                    
                     <!--
                     <div class="created-line-box-right">
                         <div class="select-lang">
