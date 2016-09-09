@@ -25,8 +25,8 @@ $(document).ready(function(){
         console.log(localStorage.language);
         $('.selected-language').empty();
         $('.selected-language').append(selectedLanguage);
-        $('.js-en').show();
-        $('.js-ru').hide();
+        $('.js-en').css('display','block');
+        $('.js-ru').css('display','none');
     });
     $('#js-ru').click(function() {
         localStorage.setItem("language", "русский");
@@ -34,8 +34,8 @@ $(document).ready(function(){
         console.log(localStorage.language);
         $('.selected-language').empty();
         $('.selected-language').append(selectedLanguage);
-        $('.js-en').hide();
-        $('.js-ru').show();
+        $('.js-en').css('display','none');
+        $('.js-ru').css('display','block');
     });
 
     if (localStorage.language == "english"){
@@ -43,16 +43,16 @@ $(document).ready(function(){
         selectedLanguage = englishLanguage;
         $('.selected-language').empty();
         $('.selected-language').append(selectedLanguage);
-        $('.js-en').show();
-        $('.js-ru').hide();
+        $('.js-en').css('display','block');
+        $('.js-ru').css('display','none');
     }
     else{
         console.log("lang set russian");
         selectedLanguage = russianLanguage;
         $('.selected-language').empty();
         $('.selected-language').append(selectedLanguage);
-        $('.js-en').hide();
-        $('.js-ru').show();
+        $('.js-en').css('display','none');
+        $('.js-ru').css('display','block');
     }
     
 });
