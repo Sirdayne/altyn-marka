@@ -27,6 +27,21 @@
 </head>
 
 <body>
+   
+   <div class="modal-back"></div>
+    <div class="thx thx-en">
+       <p>
+            THANKS. OUR MANAGERS <br>
+            WILL CALL YOU.
+        </p>
+    </div>
+    <div class="thx thx-ru">
+        <p>
+            СПАСИБО. НАШИ МЕНЕДЖЕРЫ <br>
+            СВЯЖУТСЯ С ВАМИ.
+        </p>
+    </div>
+   
     <div class="wrapper">
         <header>
             <div class="contacts-header-bg">
@@ -138,19 +153,35 @@
                 </div>
                 <div class="contacts-form">
                     <div class="form js-ru">
-                        <input class="input lastname" type="text" value="" placeholder="Имя">
-                        <input class="input lastname" type="text" value="" placeholder="Телефон">
-                        <input class="input lastname" type="text" value="" placeholder="E-mail">
-                        <textarea class="textarea"></textarea>
-                        <button class="button white-button form-button">Отправить</button>
+                        <form method="post" action="">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="altynmarka.kz">
+                            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                            <input type="hidden" name="form_subject" value="Заявка">
+                            <!-- END Hidden Required Fields -->
+                       
+                            <input class="input lastname" type="text" value="" name="Имя" placeholder="Имя" required>
+                            <input class="input lastname" type="text" value="" name="Телефон" placeholder="Телефон" required>
+                            <input class="input lastname" type="text" value="" name="Почта" placeholder="E-mail">
+                            <textarea class="textarea"></textarea>
+                            <button class="button white-button form-button">Отправить</button>
+                        </form>
                     </div>
                     
                     <div class="form js-en">
-                        <input class="input lastname" type="text" value="" placeholder="Name">
-                        <input class="input lastname" type="text" value="" placeholder="Phone">
-                        <input class="input lastname" type="text" value="" placeholder="E-mail">
-                        <textarea class="textarea"></textarea>
-                        <button class="button white-button form-button">Send</button>
+                        <form method="post" action="">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="altynmarka.kz">
+                            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                            <input type="hidden" name="form_subject" value="Заявка">
+                            <!-- END Hidden Required Fields -->
+                            
+                            <input class="input lastname" type="text" value="" name="Name" placeholder="Name" required>
+                            <input class="input lastname" type="text" value="" name="Phone" placeholder="Phone" required>
+                            <input class="input lastname" type="text" value="" name="E-mail" placeholder="E-mail">
+                            <textarea class="textarea"></textarea>
+                            <button class="button white-button form-button">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -222,16 +253,35 @@
                     </div>
                     <div class="footer-box form-box footer-box-hidden js-ru">
                         <h4>Оставить заявку</h4>
-                        <input type="text" placeholder="ИМЯ">
-                        <input type="text" placeholder="E-MAIL ИЛИ ТЕЛЕФОН">
-                        <input type="submit" value="ОТПРАВИТЬ">
+                        
+                        <form method="post" action="">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="altynmarka.kz">
+                            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                            <input type="hidden" name="form_subject" value="Заявка">
+                            <!-- END Hidden Required Fields -->
+
+                            <input type="text" placeholder="ИМЯ" name="Имя" required>
+                            <input type="text" placeholder="E-MAIL ИЛИ ТЕЛЕФОН" name="Почта или телефон" required>
+                            <input type="submit" value="ОТПРАВИТЬ">
+                        </form>
                     </div>
                     
                     <div class="footer-box form-box footer-box-hidden js-en">
                         <h4>Submit a request</h4>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="E-mail or Phone">
-                        <input type="submit" value="SUBMIT">
+                        
+                           
+                        <form method="post" action="">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="altynmarka.kz">
+                            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                            <input type="hidden" name="form_subject" value="Заявка">
+                            <!-- END Hidden Required Fields -->
+                            
+                            <input type="text" placeholder="Name" name="Name" required>
+                            <input type="text" placeholder="E-mail or Phone" name="E-mail or Phone" required>
+                            <input type="submit" value="SUBMIT">
+                        </form>
                     </div>
 
                 </div>
@@ -294,6 +344,7 @@
     </script>
 	<script src="js/common.js"></script>
 	<script src="js/selectlanguage.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

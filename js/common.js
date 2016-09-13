@@ -1,4 +1,9 @@
 $(function() {
+    
+    $('.modal-back').click(function(){
+        $('.thx').fadeOut('fast');
+        $('.modal-back').fadeOut('fast');
+    });
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
