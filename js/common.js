@@ -57,11 +57,19 @@ $(document).ready(function(){
     });
 });
 
-/*
+
 $(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("fast");
-
+    
+    $('.loader_inner').addClass('animated bounceOutDown');
+    
+    //$('.loader').css('animation', 'loader 1s linear');
+    //$("html, body").animate({ scrollTop: 0 }, 1200);
+    
+    setTimeout(
+        function() 
+            {
+                $(".loader-right").addClass('animated slideOutRight');
+                $(".loader-left").addClass('animated slideOutLeft'); 
+            }, 800);
+            
 });
-*/

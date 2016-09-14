@@ -55,29 +55,6 @@ table {
 	opacity: 1;
 }
 
-html.js .loader {
-	background: none repeat scroll 0 0 #ffffff;
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-}
-html.js .loader_inner {
-	background: #fff url("../img/preloader.gif") no-repeat center center;
-	background-size: cover;
-	height: 128px;
-	width: 128px;
-	margin-top: -64px;
-	margin-left: -64px;
-	left: 50%;
-	top: 50%;
-	position: fixed;
-}
-
 body {
 	font-family: sans-serif;
 	font-size: 100%;
@@ -1769,4 +1746,123 @@ body>div:last-child{
     background: rgba(0,0,0,0.7);
     z-index: 21;
     display: none;
+}
+
+
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    };
+}
+
+
+.ball {
+    background-color: rgba(0,0,0,0);
+    border: 10px solid rgba(225,15,19,1);
+    opacity: .9;
+    border-top: 10px solid rgba(0,0,0,0);
+    border-left: 10px solid rgba(0,0,0,0);
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    -moz-animation: spin 1.3s infinite linear;
+    -webkit-animation: spin 1.3s infinite linear;
+}
+
+.ball1 {
+    background-color: rgba(0,0,0,0);
+    border: 10px solid rgba(225,15,19,1);
+    opacity: .9;
+    border-top: 10px solid rgba(0,0,0,0);
+    border-left: 10px solid rgba(0,0,0,0);
+    border-radius: 50%;
+
+    width: 180px;
+    height: 180px;
+    margin: -210px auto;
+    -moz-animation: spinoff 1.1s infinite linear;
+    -webkit-animation: spinoff 1.1s infinite linear;
+}
+
+.ball2 {
+    background-color: rgba(0,0,0,0);
+    border: 10px solid rgba(225,15,19,1);
+    opacity: .9;
+    border-top: 10px solid rgba(0,0,0,0);
+    border-left: 10px solid rgba(0,0,0,0);
+    border-radius: 50%;
+
+    width: 160px;
+    height: 160px;
+    margin: 20px auto;
+    -moz-animation: spin .9s infinite linear;
+    -webkit-animation: spin .9s infinite linear;
+}
+
+.loader-right {
+    position: fixed;
+	background: none repeat scroll 0 0 #fff;
+	top: 0;
+    right: 0;
+    height: 100%;
+	width: 50%;
+	z-index: 100;
+}
+.loader-left {
+    position: fixed;
+	background: none repeat scroll 0 0 #fff;
+	top: 0;
+    left: 0;
+	height: 100%;
+	width: 50%;
+	z-index: 100;
+}
+.loader-left, .loader-right{
+    animation-duration: .4s !important;
+}
+.loader_inner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 101;
+    padding-top: 250px;
 }

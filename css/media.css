@@ -99,6 +99,9 @@
     .left-box, .right-box {
         padding:0 0 0 40px;
     }
+    .loader-left, .loader-right, .loader_inner{
+        display: none;
+    }
 }
 
 /* Medium Devices, Desktops */
