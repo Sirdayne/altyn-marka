@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	/*
     $( ".selected-language" ).click(function() {
       $( ".select-lang-menu" ).fadeToggle("fast");
         $(".select-lang-tick").toggleClass("select-lang-tick-reverse");
@@ -8,6 +9,20 @@ $(document).ready(function(){
       $( ".select-lang-menu" ).fadeOut("fast");
         $(".select-lang-tick").toggleClass("select-lang-tick-reverse");
     });
+	*/
+	
+	$( ".selected-language" ).click(function() {
+      $( ".select-lang-menu" ).fadeIn("fast");
+        $(".select-lang-tick").addClass("select-lang-tick-reverse");
+    });
+
+    $(document).mouseup(function (e) {
+    var container = $(".selected-language");
+    if (container.has(e.target).length === 0){
+        $( ".select-lang-menu" ).fadeOut("fast");
+        $(".select-lang-tick").removeClass("select-lang-tick-reverse");
+    }
+});
 });
 
 
@@ -45,6 +60,8 @@ $(document).ready(function(){
         $('.selected-language').append(selectedLanguage);
         $('.js-en').css('display','block');
         $('.js-ru').css('display','none');
+        //document.title = docTitle + "Altyn Marka";
+        $("title").html(docTitleEn + "Altyn Marka");
     }
     else{
         console.log("lang set russian");
@@ -53,6 +70,7 @@ $(document).ready(function(){
         $('.selected-language').append(selectedLanguage);
         $('.js-en').css('display','none');
         $('.js-ru').css('display','block');
+        $("title").html(docTitleRu + "Алтын Марка");
     }
     
 });

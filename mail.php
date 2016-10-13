@@ -40,7 +40,7 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <noreply@inprom.kz>' . PHP_EOL .
+'From: '.adopt($project_name).' <noreply@altynmarka.kz>' . PHP_EOL .
 // 'From: <noreply@caprice.ginnova.kz>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 if(mail($admin_email, adopt($form_subject), $message, $headers )){
